@@ -7,13 +7,11 @@ int main()
 {
     //first, generate a random number
     const int N = 100;
-
     
     int randomNumber = getRandomNumberBetweeb1AndN(N);
 
     //then, prompt the user for guesses WHILE guess != randomNumber
     
-
     int userGuess = -999;
     //the game loop!
 
@@ -51,26 +49,13 @@ int main()
         
     }//end while loop
 
+
+    //then, output the number of guesses it took!
+    //(should the player LOSE if too many guesses?)
     if (userGuess != randomNumber)
     {
         cout << "You LOST! Guess number was: " << randomNumber << "\n";
     }
-
-    //then, output the number of guesses it took!
-    //(should the player LOSE if too many guesses?)
-
-
-
-
-
-
-
-
-    //// Sets starndard output stream to process raw UTF-8 bytes
-    //SetConsoleOutputCP(CP_UTF8);
-    ////UTF -> unicode transformation format //unicode -> 64 bits -> 2^64 bits possible
-
-    //std::cout << "日本語" << std::endl;
     return 0;
 
 }//end main
